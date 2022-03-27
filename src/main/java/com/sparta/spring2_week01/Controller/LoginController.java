@@ -26,6 +26,6 @@ public class LoginController {
             model.addAttribute("loginId", id);
         }
 
-        return "login-result";
+        return "signup";
     }
 }
