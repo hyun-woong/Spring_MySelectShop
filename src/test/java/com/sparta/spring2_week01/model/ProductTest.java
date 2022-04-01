@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
 
-    @Nested
+    @Nested //이거 해주면 테스트 결과값에 하위 디렉토리 타고타고타고 할 수 있음요
     @DisplayName("회원이 요청한 관심상품 객체 생성")
     class CreateUserProduct {
 
@@ -17,7 +17,7 @@ class ProductTest {
         private String link;
         private int lprice;
 
-        @BeforeEach
+        @BeforeEach //모든 @Test 를 시작하기 전에 이 객체를 먼저 수행한다.
         void setup() {
             userId = 100L;
             title = "오리온 꼬북칩 초코츄러스맛 160g";
